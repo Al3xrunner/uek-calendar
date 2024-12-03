@@ -1,7 +1,7 @@
 import re
 import uuid
 import requests
-from config import CALENDAR_URL
+from config import CALENDAR_URL, LANGUAGE
 
 # Fetch the calendar data from the URL
 response = requests.get(CALENDAR_URL)
@@ -14,6 +14,39 @@ lines = data.split('\n')
 corrected_events = []
 in_event = False
 event_lines = []
+
+# Translation mappings
+translations = {
+    'PL': {
+        'wykład': 'wykład',
+        'ćwiczenia': 'ćwiczenia',
+        'egzamin': 'egzamin',
+        'Paw.': 'Paw.',
+        'Bud.gł.': 'Bud.gł.',
+        'sala': 'sala',
+        'lab.': 'lab.',
+        'prof. UEK dr hab.': 'prof. UEK dr hab.',
+        'dr hab.': 'dr hab.',
+        'dr': 'dr',
+        'mgr': 'mgr',
+    },
+    'EN': {
+        'wykład': 'Lecture',
+        'ćwiczenia': 'Class',
+        'egzamin': 'Exam',
+        'Paw.': 'Building ',
+        'Bud.gł.': 'Main Building',
+        'sala': 'Room',
+        'lab.': 'Lab',
+        'prof. UEK dr hab.': 'Prof. UEK Dr hab.',
+        'dr hab.': 'Dr hab.',
+        'dr': 'Dr',
+        'mgr': 'MSc',
+    }
+}
+
+# Choose the appropriate translation mapping
+translation_map = translations.get(LANGUAGE, translations['PL'])
 
 for line in lines:
     line = line.rstrip('\r\n')
@@ -76,6 +109,28 @@ for line in lines:
                 # Correct date formats if necessary
                 evt_line = re.sub(r'DTSTART;TZID=Europe/Warsaw:(\d{8}T\d{6})', r'DTSTART;TZID=Europe/Warsaw:\1', evt_line)
                 evt_line = re.sub(r'DTEND;TZID=Europe/Warsaw:(\d{8}T\d{6})', r'DTEND;TZID=Europe/Warsaw:\1', evt_line)
+
+                # Perform translations if necessary
+                if LANGUAGE == 'EN':
+                    if evt_line.startswith('SUMMARY:'):
+                        summary_value = evt_line[len('SUMMARY:'):]
+                        # Replace Polish terms in SUMMARY
+                        for pl_word, en_word in translation_map.items():
+                            summary_value = summary_value.replace(pl_word, en_word)
+                        evt_line = 'SUMMARY:' + summary_value
+                    elif evt_line.startswith('LOCATION:'):
+                        location_value = evt_line[len('LOCATION:'):]
+                        # Replace Polish terms in LOCATION
+                        for pl_word, en_word in translation_map.items():
+                            location_value = location_value.replace(pl_word, en_word)
+                        evt_line = 'LOCATION:' + location_value
+                    elif evt_line.startswith('DESCRIPTION:'):
+                        description_value = evt_line[len('DESCRIPTION:'):]
+                        # Replace Polish terms in DESCRIPTION
+                        for pl_word, en_word in translation_map.items():
+                            description_value = description_value.replace(pl_word, en_word)
+                        evt_line = 'DESCRIPTION:' + description_value
+
                 processed_event.append(evt_line)
             # Add UID to the event if not present
             if 'UID' not in event_props:
@@ -96,6 +151,29 @@ headers = [
     'VERSION:2.0',
     'PRODID:-//Uek Plan zajęć//',
 ]
+
+# Include the VTIMEZONE component
+vtimezone_component = [
+    'BEGIN:VTIMEZONE',
+    'TZID:Europe/Warsaw',
+    'X-LIC-LOCATION:Europe/Warsaw',
+    'BEGIN:DAYLIGHT',
+    'TZOFFSETFROM:+0100',
+    'TZOFFSETTO:+0200',
+    'TZNAME:CEST',
+    'DTSTART:19700329T020000',
+    'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU',
+    'END:DAYLIGHT',
+    'BEGIN:STANDARD',
+    'TZOFFSETFROM:+0200',
+    'TZOFFSETTO:+0100',
+    'TZNAME:CET',
+    'DTSTART:19701025T030000',
+    'RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU',
+    'END:STANDARD',
+    'END:VTIMEZONE',
+]
+
 footers = ['END:VCALENDAR']
 
 # Function to fold lines longer than 75 octets
@@ -115,7 +193,7 @@ def fold_line(line):
         return folded
 
 # Apply line folding to all lines
-all_lines = headers + corrected_events + footers
+all_lines = headers + vtimezone_component + corrected_events + footers
 corrected_data = '\r\n'.join(fold_line(line) for line in all_lines)
 
 # Save to a new .ics file
