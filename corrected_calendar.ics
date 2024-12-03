@@ -1,1138 +1,1156 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Uek Plan zajęć//
+BEGIN:VTIMEZONE
+TZID:Europe/Warsaw
+X-LIC-LOCATION:Europe/Warsaw
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
-UID:a08a1ec3-9478-49e1-b6cb-86e02c0ded7f@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:bfaf8318-e49e-48a2-92d8-622e44707af7@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241001T094500
 DTEND;TZID=Europe/Warsaw:20241001T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:dbf6616b-9bf4-49fd-b087-a1a6c09dec4f@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:62fe303e-9b79-41a9-9dd8-09dc91ea076e@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241001T150000
 DTEND;TZID=Europe/Warsaw:20241001T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:b189f2b1-a747-4e04-bd58-6bc71475d730@uek.pl
-SUMMARY:wykład | Computer Systems
+UID:58be12e9-968d-43d6-b8aa-fea129e17c3d@uek.pl
+SUMMARY:Lecture | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241001T164500
 DTEND;TZID=Europe/Warsaw:20241001T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.F 008
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building F 008
 END:VEVENT
 BEGIN:VEVENT
-UID:957f3523-262d-4e67-ae82-4f09c227873c@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:e3eba2f5-9bb8-452e-aecb-1bb829d2efe4@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241003T150000
 DTEND;TZID=Europe/Warsaw:20241003T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:09090059-6504-4d1c-809c-6ffa1d327d3f@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:4a5d2934-37eb-4211-a10d-7f81c20ec9f7@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241004T103000
 DTEND;TZID=Europe/Warsaw:20241004T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:3d780a16-b425-4dc9-8641-78e7b3f59798@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:95dad5c8-c9b1-41df-95f6-204337ee921b@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241007T094500
 DTEND;TZID=Europe/Warsaw:20241007T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:00e94664-681a-4939-975a-f6e02de2865d@uek.pl
-SUMMARY:wykład | Algorithms and Theory of Computation
+UID:02148cd1-d9fd-4e60-8d48-409f964bd41a@uek.pl
+SUMMARY:Lecture | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241007T150000
 DTEND;TZID=Europe/Warsaw:20241007T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof.UEK dr hab.inż. Janusz Morajda
-LOCATION:Paw.C sala F
+DESCRIPTION:prof.UEK Dr hab.inż. Janusz Morajda
+LOCATION:Building C Room F
 END:VEVENT
 BEGIN:VEVENT
-UID:aff1d1c2-687f-4085-9088-a538510687b8@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:e954f495-8431-4cff-999d-e2577a765120@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241008T094500
 DTEND;TZID=Europe/Warsaw:20241008T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:fd410939-84a0-4e57-8852-89b2943bfb45@uek.pl
-SUMMARY:ćwiczenia | Computer Systems
+UID:fa04524e-94ad-476e-ac16-66294328df34@uek.pl
+SUMMARY:Class | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241009T094500
 DTEND;TZID=Europe/Warsaw:20241009T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.A 07 lab. Win7\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building A 07 Lab Win7\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:dd99c10d-5dad-40e0-b6da-63835936689f@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:231db1b0-ba5d-4753-9592-ec3db0afce45@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241009T150000
 DTEND;TZID=Europe/Warsaw:20241009T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:82488121-0341-4285-b16c-6a3800398534@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:69c640ff-d7da-44f3-8106-483e95bef95d@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241010T150000
 DTEND;TZID=Europe/Warsaw:20241010T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:c5112b7d-f58a-40fe-95a8-ee440e300d78@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:2cb46d17-874d-4f8e-9900-c3c9249f392e@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241011T103000
 DTEND;TZID=Europe/Warsaw:20241011T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:69b95f7f-400c-490a-84b6-0914c6db4b3b@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:072504d8-716f-49fa-bd42-2cea531ce90b@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241014T094500
 DTEND;TZID=Europe/Warsaw:20241014T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:f3c3f94a-55df-4c72-b829-7389f287cdc8@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:e8f7fee5-0d4f-4c98-a04c-eb74145e10f2@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241015T094500
 DTEND;TZID=Europe/Warsaw:20241015T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:08f4b08d-dc38-4227-a579-33699ad31385@uek.pl
-SUMMARY:wykład | Computer Systems
+UID:bc93ee3e-99f9-4e7f-91c9-9bdfd2fb5cc5@uek.pl
+SUMMARY:Lecture | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241015T164500
 DTEND;TZID=Europe/Warsaw:20241015T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.F 008
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building F 008
 END:VEVENT
 BEGIN:VEVENT
-UID:b636f8c6-b791-4aca-bbaa-d2f5aaa4f7ae@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:e4dd724e-15b5-412a-8ffe-4b9da3dae02c@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241016T150000
 DTEND;TZID=Europe/Warsaw:20241016T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:d5df3ce9-780f-4e2b-9b95-e270eefb79e8@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:765ab01e-e5a4-48eb-a38f-651d4e7fb8db@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241017T150000
 DTEND;TZID=Europe/Warsaw:20241017T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:9e3afc6a-65ee-491c-b524-0f14b6450f64@uek.pl
-SUMMARY:wykład | Organisation and Management
+UID:23db5d01-c889-4e58-b21d-6f3190747a83@uek.pl
+SUMMARY:Lecture | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241017T164500
 DTEND;TZID=Europe/Warsaw:20241017T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Czesław Mesjasz
-LOCATION:Paw.S sala 9
+DESCRIPTION:Prof. UEK Dr hab. Czesław Mesjasz
+LOCATION:Building S Room 9
 END:VEVENT
 BEGIN:VEVENT
-UID:19d17d63-d136-4682-bcc0-0516f8b3628e@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:ddbad3a9-2512-4377-8f29-cf24a7da8360@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241018T103000
 DTEND;TZID=Europe/Warsaw:20241018T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:56868673-3640-4db4-bd7b-833b024c3b96@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:559f2ee1-1a76-4d63-9889-448d2e503f51@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241021T094500
 DTEND;TZID=Europe/Warsaw:20241021T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:14f6f7dd-3e68-493f-b28d-6b1087958194@uek.pl
-SUMMARY:wykład | Algorithms and Theory of Computation
+UID:2f961576-5d9e-4a89-999d-323e11affc7d@uek.pl
+SUMMARY:Lecture | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241021T150000
 DTEND;TZID=Europe/Warsaw:20241021T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof.UEK dr hab.inż. Janusz Morajda
-LOCATION:Paw.C sala F
+DESCRIPTION:prof.UEK Dr hab.inż. Janusz Morajda
+LOCATION:Building C Room F
 END:VEVENT
 BEGIN:VEVENT
-UID:6fc0605c-d3be-475e-9820-5ee7ceb2caa6@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:a9f5bf21-5efe-4665-8cc9-089359d3e1ad@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241022T094500
 DTEND;TZID=Europe/Warsaw:20241022T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:96ab8632-081a-44fd-8757-23c6ffac66b7@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:b675a370-a98d-401c-9ff6-2f2b60b583a5@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241022T150000
 DTEND;TZID=Europe/Warsaw:20241022T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:f597accc-804d-40b0-8d66-35cd8e9a0c12@uek.pl
-SUMMARY:ćwiczenia | Computer Systems
+UID:c8bf8b7e-0c5e-4ac3-83d5-af9bab67284b@uek.pl
+SUMMARY:Class | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241023T094500
 DTEND;TZID=Europe/Warsaw:20241023T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.A 07 lab. Win7\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building A 07 Lab Win7\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:5116121e-48c2-4d13-8ab5-f5a181d57b79@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:7d64a5ac-9d87-4918-8ea9-f7b99bbe03c2@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241023T150000
 DTEND;TZID=Europe/Warsaw:20241023T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:6c19b308-a3c2-4242-8ce9-85a2dae2a029@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:401c388d-2b62-4eef-a486-86b14b9c9664@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241023T164500
 DTEND;TZID=Europe/Warsaw:20241023T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:d4500c52-72ba-459b-80aa-518a8e514f6f@uek.pl
-SUMMARY:wykład | Organisation and Management
+UID:b9d52ac4-0598-45cb-97c5-ff2a3f30de31@uek.pl
+SUMMARY:Lecture | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241024T164500
 DTEND;TZID=Europe/Warsaw:20241024T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Czesław Mesjasz
-LOCATION:Paw.S sala 4
+DESCRIPTION:Prof. UEK Dr hab. Czesław Mesjasz
+LOCATION:Building S Room 4
 END:VEVENT
 BEGIN:VEVENT
-UID:1e62aa42-26b6-46da-a28a-a6b9ba1c83c3@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:a04adced-4d74-444d-b78f-9e191e33d4a4@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241025T103000
 DTEND;TZID=Europe/Warsaw:20241025T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:bbb3b178-e0fa-465f-9d58-fd8af1e943b7@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:774fb6f0-2a02-4523-aa93-6fad55c76a19@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241028T094500
 DTEND;TZID=Europe/Warsaw:20241028T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:eab1398b-849d-488d-aafd-e76c3f2084a6@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:b375d744-69f1-4efe-83bd-31c6ab5a6306@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241028T131500
 DTEND;TZID=Europe/Warsaw:20241028T144500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.F 515
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building F 515
 END:VEVENT
 BEGIN:VEVENT
-UID:6a022503-3705-4824-b8a2-c5038f02ec15@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:51db1324-9403-4f40-9be1-d6774ef8c7a3@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241029T094500
 DTEND;TZID=Europe/Warsaw:20241029T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:3443990b-e438-4f96-a962-3b088b614dad@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:069b89a4-5487-4060-9519-517b490220a2@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241029T150000
 DTEND;TZID=Europe/Warsaw:20241029T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:c1ebe929-269b-4768-969a-98abde309a0a@uek.pl
-SUMMARY:wykład | Computer Systems
+UID:0f958ca4-ef6e-4569-b391-6a4cd80183ba@uek.pl
+SUMMARY:Lecture | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241029T164500
 DTEND;TZID=Europe/Warsaw:20241029T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.F 008
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building F 008
 END:VEVENT
 BEGIN:VEVENT
-UID:9aca8758-7348-43ee-8c63-98ce3b974f3c@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:de6a274a-80e6-437e-b284-4ef44a3c0ec7@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241030T150000
 DTEND;TZID=Europe/Warsaw:20241030T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:f89c8670-7b19-414b-90cc-7d4b8d7cbfd7@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:6361c55e-85b1-4e16-8953-ca32468d2595@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241030T164500
 DTEND;TZID=Europe/Warsaw:20241030T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:1bb3ccf6-e92f-4196-8e92-8f633f19f8f7@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:07ab3fda-e8b4-4650-9984-a191d6e58155@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241031T150000
 DTEND;TZID=Europe/Warsaw:20241031T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:804283a3-a507-4d6a-a311-dce121ce7a91@uek.pl
-SUMMARY:wykład | Organisation and Management
+UID:9d66e1ad-6ace-42cb-835e-b9b81c4010e4@uek.pl
+SUMMARY:Lecture | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241031T164500
 DTEND;TZID=Europe/Warsaw:20241031T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Czesław Mesjasz
-LOCATION:Paw.S sala 9
+DESCRIPTION:Prof. UEK Dr hab. Czesław Mesjasz
+LOCATION:Building S Room 9
 END:VEVENT
 BEGIN:VEVENT
-UID:3242aadc-6e5d-4de7-9843-2b8b5c9adbff@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:82a70ba5-f355-4503-8aba-03baee849494@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241104T094500
 DTEND;TZID=Europe/Warsaw:20241104T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:f7416565-9fb0-40b2-9952-ae2f2602ac26@uek.pl
-SUMMARY:wykład | Algorithms and Theory of Computation
+UID:c3cfe8a2-8633-427a-8beb-d49f82fca397@uek.pl
+SUMMARY:Lecture | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241104T150000
 DTEND;TZID=Europe/Warsaw:20241104T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof.UEK dr hab.inż. Janusz Morajda
-LOCATION:Paw.C sala F
+DESCRIPTION:prof.UEK Dr hab.inż. Janusz Morajda
+LOCATION:Building C Room F
 END:VEVENT
 BEGIN:VEVENT
-UID:509a3b83-444d-4f0d-94c5-1f20897354de@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:a3ce08a2-1d2e-4c83-997b-1af725c147af@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241105T094500
 DTEND;TZID=Europe/Warsaw:20241105T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:c62cc7b5-3b5e-4791-bad3-b698f216c485@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:b5d9a372-5513-40b1-b8d0-ec5073fb683d@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241105T150000
 DTEND;TZID=Europe/Warsaw:20241105T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:3829d31a-c8a7-4883-8a0a-74979a7126ec@uek.pl
-SUMMARY:ćwiczenia | Computer Systems
+UID:fb11026a-e4c2-4dde-b7fb-c946fdb5f12d@uek.pl
+SUMMARY:Class | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241106T094500
 DTEND;TZID=Europe/Warsaw:20241106T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.A 07 lab. Win7\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building A 07 Lab Win7\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:e778a755-4c5b-49c7-bca6-ff2431f71787@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:d7bfcad9-076c-4b88-b915-d9aab22db5f3@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241106T150000
 DTEND;TZID=Europe/Warsaw:20241106T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:2f390ece-ad72-4875-9247-83463e49d5df@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:b5e361d0-ec4a-4a00-b90d-fefece8922c6@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241106T164500
 DTEND;TZID=Europe/Warsaw:20241106T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:25538bb5-d922-436e-b003-2501c1704654@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:3b6caa2a-94da-4c60-8a74-cc965e454406@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241108T103000
 DTEND;TZID=Europe/Warsaw:20241108T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:6e2b9c5d-40b1-4f41-92b4-a347f356802a@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:71768f40-4137-49c6-a704-145b9f215a6f@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241108T131500
 DTEND;TZID=Europe/Warsaw:20241108T144500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.F 109
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building F 109
 END:VEVENT
 BEGIN:VEVENT
-UID:89b094ed-6e2f-4053-a9bc-a2ec04463a40@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:93851020-3eda-481a-a558-61e22fb27080@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241112T094500
 DTEND;TZID=Europe/Warsaw:20241112T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:9c09d35e-1933-40e9-8364-9b702bf49cf5@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:6ba636fb-a6d8-493a-9def-db7f56ccfee4@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241112T150000
 DTEND;TZID=Europe/Warsaw:20241112T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:af45607b-6c5c-43a4-946b-83cd9a0cfae3@uek.pl
-SUMMARY:wykład | Computer Systems
+UID:9e749491-ee49-4d4d-a45b-b91e7c3df2ec@uek.pl
+SUMMARY:Lecture | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241112T164500
 DTEND;TZID=Europe/Warsaw:20241112T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.F 008
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building F 008
 END:VEVENT
 BEGIN:VEVENT
-UID:36f2a08c-f578-4e2d-ad78-892922146ad9@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:05c14798-d9c4-40f9-a924-2cf1e1df0a01@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241113T150000
 DTEND;TZID=Europe/Warsaw:20241113T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:d1592a12-2380-40ae-a55f-7804baf36670@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:8ecabd29-b8a6-4288-9bd3-53e1225f8e0f@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241113T164500
 DTEND;TZID=Europe/Warsaw:20241113T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:941f97e4-fce7-4a33-a755-a9ea634f6818@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:8953fb64-2dee-450e-8d0c-84b5dfc0989e@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241114T150000
 DTEND;TZID=Europe/Warsaw:20241114T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:02d90b1d-3b90-439f-83f5-8a47885b8df3@uek.pl
-SUMMARY:wykład | Organisation and Management
+UID:93dab120-66da-4918-81c2-406219928b92@uek.pl
+SUMMARY:Lecture | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241114T164500
 DTEND;TZID=Europe/Warsaw:20241114T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Czesław Mesjasz
-LOCATION:Paw.S sala 9
+DESCRIPTION:Prof. UEK Dr hab. Czesław Mesjasz
+LOCATION:Building S Room 9
 END:VEVENT
 BEGIN:VEVENT
-UID:f25fda3e-efa2-4309-9cb8-058c06db5e21@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:e735ab8c-c778-42cd-bfc5-63c212eb685e@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241115T103000
 DTEND;TZID=Europe/Warsaw:20241115T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:45430645-1f6e-4449-81d8-f2cc16356658@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:1650523d-956c-470e-9884-28cb1818fdf3@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241118T094500
 DTEND;TZID=Europe/Warsaw:20241118T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:d35614f3-d3d8-430c-ade5-5686c9b90d30@uek.pl
-SUMMARY:wykład | Algorithms and Theory of Computation
+UID:eeafc9a4-ba26-440e-af13-758763826a0b@uek.pl
+SUMMARY:Lecture | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241118T150000
 DTEND;TZID=Europe/Warsaw:20241118T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof.UEK dr hab.inż. Janusz Morajda
-LOCATION:Paw.C sala F
+DESCRIPTION:prof.UEK Dr hab.inż. Janusz Morajda
+LOCATION:Building C Room F
 END:VEVENT
 BEGIN:VEVENT
-UID:35488196-9382-431d-90ff-926622a4844a@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:1c2e0826-8319-4c19-8595-10c478f2b0c5@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241119T094500
 DTEND;TZID=Europe/Warsaw:20241119T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:c3f5b5f3-1da0-4269-9af8-2e3fb41f57a3@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:5c705140-a5a8-4c81-ad75-48af1a6de213@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241119T150000
 DTEND;TZID=Europe/Warsaw:20241119T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:c888313b-eb7d-49b7-a470-c89c5fee3511@uek.pl
-SUMMARY:ćwiczenia | Computer Systems
+UID:fbcdd0e6-061e-4936-9ec6-d186ee47ef78@uek.pl
+SUMMARY:Class | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241120T094500
 DTEND;TZID=Europe/Warsaw:20241120T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.A 07 lab. Win7\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building A 07 Lab Win7\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:ae772f80-1254-47ec-8826-65f142c7afcf@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:e9506233-9695-4a0a-9b82-e2dc75e682f5@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241120T150000
 DTEND;TZID=Europe/Warsaw:20241120T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:9664b72b-db6c-4a49-8cf1-e6b6943461db@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:e61cbe36-4d2f-4c0e-a0be-5d2b6d3135a9@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241120T164500
 DTEND;TZID=Europe/Warsaw:20241120T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:d1d09036-5f82-4a0e-9ef5-ff247e6a2b39@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:a2910999-b485-4530-9474-23353cd2e367@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241121T150000
 DTEND;TZID=Europe/Warsaw:20241121T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:96daa25a-c81c-478a-896d-69120cb538e8@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:0cfc1d77-452f-4126-aba3-a08b9f5aaf10@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241122T103000
 DTEND;TZID=Europe/Warsaw:20241122T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:a58c9333-aff0-4655-9469-bfa812599419@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:a7b0b320-80b0-440c-934f-158f13ae98cb@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241125T094500
 DTEND;TZID=Europe/Warsaw:20241125T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:769b16f0-7a76-4987-bdcc-de760c61306f@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:bc820586-36f6-4ff2-a242-f34e78590acf@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241126T094500
 DTEND;TZID=Europe/Warsaw:20241126T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:81d2b0ef-029a-4edf-9773-89c461aa8168@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:f3d2e6e1-7e3b-48af-ac74-2c58fb09e0c2@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241126T150000
 DTEND;TZID=Europe/Warsaw:20241126T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:19084c72-182b-4231-9321-b8a249c04821@uek.pl
-SUMMARY:wykład | Computer Systems
+UID:cc418dfe-c425-43d5-abbb-30455a6a76f6@uek.pl
+SUMMARY:Lecture | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241126T164500
 DTEND;TZID=Europe/Warsaw:20241126T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.F 008
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building F 008
 END:VEVENT
 BEGIN:VEVENT
-UID:7cebab80-2e80-4036-9837-fb0aa282f0dc@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:459d9ca9-d4f1-4346-8041-414d8d637b27@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241127T150000
 DTEND;TZID=Europe/Warsaw:20241127T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:8e832e00-6e86-4946-9137-9d8658053a44@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:4c74b827-6a7a-4f66-8c87-5b14812316ea@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241127T164500
 DTEND;TZID=Europe/Warsaw:20241127T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:fbc530cf-9333-4837-8fad-10337f6f5ad8@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:3a896f1a-e764-494a-8d20-a40084d10176@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241128T150000
 DTEND;TZID=Europe/Warsaw:20241128T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:2e49e8bc-a2c5-40b4-818e-eb4b0e0d8e2d@uek.pl
-SUMMARY:wykład | Organisation and Management
+UID:093c321a-8e7f-4aa4-bf07-617d5db4e33f@uek.pl
+SUMMARY:Lecture | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241128T164500
 DTEND;TZID=Europe/Warsaw:20241128T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Czesław Mesjasz
-LOCATION:Paw.S sala 9
+DESCRIPTION:Prof. UEK Dr hab. Czesław Mesjasz
+LOCATION:Building S Room 9
 END:VEVENT
 BEGIN:VEVENT
-UID:92a0a70f-1c94-4ff5-9ee5-08e2bb5eff3c@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:d60b747f-9b19-4433-a777-f452c7043ca5@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241129T103000
 DTEND;TZID=Europe/Warsaw:20241129T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:478a3d6b-ad15-4311-8c10-b6206642eb07@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:7e9a2900-ea89-4f52-9730-55c26f846d0c@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241202T094500
 DTEND;TZID=Europe/Warsaw:20241202T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:199edddc-ed16-43bc-8a58-7ec1c5589226@uek.pl
-SUMMARY:wykład | Algorithms and Theory of Computation
+UID:7a66172e-a3f3-4926-85bd-d1bfa466f43a@uek.pl
+SUMMARY:Lecture | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241202T150000
 DTEND;TZID=Europe/Warsaw:20241202T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof.UEK dr hab.inż. Janusz Morajda
-LOCATION:Paw.C sala F
+DESCRIPTION:prof.UEK Dr hab.inż. Janusz Morajda
+LOCATION:Building C Room F
 END:VEVENT
 BEGIN:VEVENT
-UID:dc53f943-fef5-41d3-8faa-ac6150de0c0a@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:155b3b01-1749-4fb3-9266-c149b556fd34@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241203T094500
 DTEND;TZID=Europe/Warsaw:20241203T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:4427c93e-ad03-43f1-bba5-5296e501ebbb@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:135cd43e-10b2-4ee5-96f3-67940eebb3b5@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241203T150000
 DTEND;TZID=Europe/Warsaw:20241203T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:9b20c940-534d-494e-bd3c-348fff8a7b54@uek.pl
-SUMMARY:ćwiczenia | Computer Systems
+UID:2a20efc5-2802-45ba-b0ad-7033e95d3bab@uek.pl
+SUMMARY:Class | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241204T094500
 DTEND;TZID=Europe/Warsaw:20241204T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.A 07 lab. Win7\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building A 07 Lab Win7\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:16de5adb-d02d-4994-b9e7-5fa81272e4d3@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:a7dbbd10-2afb-4c99-a35e-d8fad8676d90@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241204T150000
 DTEND;TZID=Europe/Warsaw:20241204T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:c22823d8-cd10-416c-9b5c-a7dc6a393f3c@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:e9609e40-2279-40ef-9e02-5ff1f4b66c02@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241204T164500
 DTEND;TZID=Europe/Warsaw:20241204T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:1058613a-4edd-40ba-97cd-133e624621df@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:ba03f491-911d-42ed-bb4c-55b49e9ff45f@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241205T150000
 DTEND;TZID=Europe/Warsaw:20241205T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:cb8869ff-7483-4d15-8e81-a20181d0e070@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:c7b5feec-9f40-4065-ac01-0da933a25125@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241206T103000
 DTEND;TZID=Europe/Warsaw:20241206T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:eb742097-ff5e-49db-aa91-f5d4ea93897c@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:14f2d598-780e-493c-bcf5-1e869552b305@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241209T094500
 DTEND;TZID=Europe/Warsaw:20241209T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:06259fbf-5861-4852-9a72-8f1037ad84c3@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:fde44600-bd83-4747-a39e-d2bec4a736f5@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241210T094500
 DTEND;TZID=Europe/Warsaw:20241210T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:24047940-c909-4dfc-8486-e1fb150d4695@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:95efa655-7c75-43cc-8de2-af9e30dfc15d@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241210T150000
 DTEND;TZID=Europe/Warsaw:20241210T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:9261db44-5788-4020-8a7f-826827a8c836@uek.pl
-SUMMARY:wykład | Computer Systems
+UID:51099a5e-859b-4636-9730-36746fe0c974@uek.pl
+SUMMARY:Lecture | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241210T164500
 DTEND;TZID=Europe/Warsaw:20241210T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.F 008
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building F 008
 END:VEVENT
 BEGIN:VEVENT
-UID:0b55d620-c8a2-4827-a35e-8acd712fc41d@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:14f73e60-ac55-4f2c-b5f4-308b663392c0@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241211T150000
 DTEND;TZID=Europe/Warsaw:20241211T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:5e19883b-4d95-4e41-b5db-1f76de5061da@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:777a7b1e-05f7-47f9-8a1d-0cda348db30d@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241211T164500
 DTEND;TZID=Europe/Warsaw:20241211T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:2e93f536-a1df-4416-aafa-b831a8d16174@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:c353701b-544a-4839-a56b-ed069e6fb175@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241212T150000
 DTEND;TZID=Europe/Warsaw:20241212T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:e91b1e7c-10d4-49a4-8e14-a3d44eede3ea@uek.pl
-SUMMARY:wykład | Organisation and Management
+UID:cd5e44ce-69fe-4166-89f6-ee25152fe836@uek.pl
+SUMMARY:Lecture | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241212T164500
 DTEND;TZID=Europe/Warsaw:20241212T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Czesław Mesjasz
-LOCATION:Paw.S sala 9
+DESCRIPTION:Prof. UEK Dr hab. Czesław Mesjasz
+LOCATION:Building S Room 9
 END:VEVENT
 BEGIN:VEVENT
-UID:c5fb4cee-2960-4dfe-aeff-12eaafd24e90@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:31cff5f3-4a54-4839-b3cf-1c0e580e2be8@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241213T103000
 DTEND;TZID=Europe/Warsaw:20241213T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:81983d10-5ad1-483c-a4e7-e9a4ae0d57d9@uek.pl
-SUMMARY:ćwiczenia | Data Notations
+UID:b1b67aff-312d-4814-b923-b2840436b5eb@uek.pl
+SUMMARY:Class | Data Notations
 DTSTART;TZID=Europe/Warsaw:20241216T094500
 DTEND;TZID=Europe/Warsaw:20241216T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:5c0a62d9-9e72-4115-9923-76955012b9b3@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:adf4a0f2-37a7-46f7-b5a9-2ea6c0b8ea21@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241217T094500
 DTEND;TZID=Europe/Warsaw:20241217T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:242ca36e-acb5-4558-bb0d-bb827fa17f4f@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:d62de7c8-5703-4a02-bd80-731c536ff4f3@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20241217T150000
 DTEND;TZID=Europe/Warsaw:20241217T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:8cf77583-4654-467e-aa75-72a1ffcd42a4@uek.pl
-SUMMARY:ćwiczenia | Computer Systems
+UID:1f524e64-3b93-4bd5-978a-bdfb834fcd76@uek.pl
+SUMMARY:Class | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20241218T094500
 DTEND;TZID=Europe/Warsaw:20241218T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.A 07 lab. Win7\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building A 07 Lab Win7\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:07fd8694-1867-4dac-a438-3f8912e293a0@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:4abccd11-ffb9-452f-a3a3-44ae7d8a0523@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20241218T150000
 DTEND;TZID=Europe/Warsaw:20241218T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:12827d75-881b-4e71-889c-2466c052c694@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:e1a86162-8258-4657-a399-b8da646086fc@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20241218T164500
 DTEND;TZID=Europe/Warsaw:20241218T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:58c1785d-26e2-4283-8c59-7ecc61bf1078@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:10db90e4-1b55-45aa-bbe4-957ea1b88211@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20241219T150000
 DTEND;TZID=Europe/Warsaw:20241219T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:40c7efcf-6dcf-415a-bf72-55d778da538e@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:88f74fc0-a49b-4e65-b273-fb04145b9d82@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20241220T103000
 DTEND;TZID=Europe/Warsaw:20241220T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:13ee4d37-93b2-4d10-bb28-005688198443@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:85559b9c-d435-4ec0-a0ec-23bd1ff1b4b2@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20250107T094500
 DTEND;TZID=Europe/Warsaw:20250107T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:e00bc63c-bed3-43fa-90df-7a23f9034a97@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:480e2073-0a3f-43af-9acd-2662023d49c7@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20250107T150000
 DTEND;TZID=Europe/Warsaw:20250107T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:fb2982d7-24c9-4215-97e3-f21d9693dab2@uek.pl
-SUMMARY:wykład | Computer Systems
+UID:a713b7bf-89cc-40af-b1a5-8582055de483@uek.pl
+SUMMARY:Lecture | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20250107T164500
 DTEND;TZID=Europe/Warsaw:20250107T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.F 008
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building F 008
 END:VEVENT
 BEGIN:VEVENT
-UID:4f5b4f5c-02e5-4dce-bda4-d23ce59d81e8@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:9f73891d-8e23-478c-8597-1f3474441978@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20250108T150000
 DTEND;TZID=Europe/Warsaw:20250108T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:a40e6c04-6a8e-42d5-94b0-a85feeba8c45@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:595ef0f0-298d-4043-a5ef-532921acb400@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20250108T164500
 DTEND;TZID=Europe/Warsaw:20250108T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:742f0423-0826-4999-8b5f-380763ae040f@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:2cb7c8ed-c14c-40aa-b349-5955c0ef2452@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20250109T150000
 DTEND;TZID=Europe/Warsaw:20250109T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:d144f5c0-5f3e-47ac-a52b-cebbe293a18b@uek.pl
-SUMMARY:wykład | Organisation and Management
+UID:09b609e0-eeca-428e-a000-3b4199e0a14e@uek.pl
+SUMMARY:Lecture | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20250109T164500
 DTEND;TZID=Europe/Warsaw:20250109T181500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Czesław Mesjasz
-LOCATION:Paw.S sala 9
+DESCRIPTION:Prof. UEK Dr hab. Czesław Mesjasz
+LOCATION:Building S Room 9
 END:VEVENT
 BEGIN:VEVENT
-UID:6c6ce2cd-fc45-4b16-b2cb-7c7680d705bb@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:7f2f0e60-7bca-48c1-bd48-7e7b6a490117@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20250110T103000
 DTEND;TZID=Europe/Warsaw:20250110T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:66b6af9d-9280-4133-8896-1722d70ab48c@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:affced59-1941-4d9e-8672-70812349c8e0@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20250113T131500
 DTEND;TZID=Europe/Warsaw:20250113T144500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Bud.gł. 9
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Main Building 9
 END:VEVENT
 BEGIN:VEVENT
-UID:37c6d171-8db2-45af-8706-131c3a342c4a@uek.pl
-SUMMARY:wykład | Algorithms and Theory of Computation
+UID:afd4dde2-9182-478b-984f-bae99a23f2ea@uek.pl
+SUMMARY:Lecture | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20250113T150000
 DTEND;TZID=Europe/Warsaw:20250113T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof.UEK dr hab.inż. Janusz Morajda
-LOCATION:Paw.C sala F
+DESCRIPTION:prof.UEK Dr hab.inż. Janusz Morajda
+LOCATION:Building C Room F
 END:VEVENT
 BEGIN:VEVENT
-UID:89d989be-9040-4090-8b74-ba76367fdfd1@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:2e65769c-58be-4b16-bb55-4d7af01c1a7e@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20250114T094500
 DTEND;TZID=Europe/Warsaw:20250114T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:cbbbe359-15db-4e99-ba40-517b8a997bbc@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:afb3d1b1-2a49-4dc0-96bf-52cf33a2a024@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20250114T150000
 DTEND;TZID=Europe/Warsaw:20250114T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:8d8bc0aa-718d-4d69-886d-6a61ea153a60@uek.pl
-SUMMARY:ćwiczenia | Computer Systems
+UID:86421e0c-f7b2-4e0d-b614-9b2ebc0cb9b0@uek.pl
+SUMMARY:Class | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20250115T094500
 DTEND;TZID=Europe/Warsaw:20250115T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.A 07 lab. Win7\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building A 07 Lab Win7\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:4e9b4f60-f772-4fe6-a896-8d34aad6532b@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:425e6635-d495-464c-bccf-df2491e10d4c@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20250115T150000
 DTEND;TZID=Europe/Warsaw:20250115T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Paw.F 413
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Building F 413
 END:VEVENT
 BEGIN:VEVENT
-UID:63ab22dc-2ff6-4aad-88ad-d9ff4a098652@uek.pl
-SUMMARY:ćwiczenia | Business Data Processing
+UID:f7c62cd8-8d52-425a-ac65-cffc45c1d278@uek.pl
+SUMMARY:Class | Business Data Processing
 DTSTART;TZID=Europe/Warsaw:20250115T164500
 DTEND;TZID=Europe/Warsaw:20250115T173000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:6016fb45-b6a9-4983-9d61-4fe1b021fddd@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:758d18b5-0a6d-48d2-a1e7-6abe7ffa64ac@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20250116T150000
 DTEND;TZID=Europe/Warsaw:20250116T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:c582cdac-411f-4387-8c87-487e48c1cafb@uek.pl
-SUMMARY:wykład | Algorithms and Theory of Computation
+UID:ba2f0e3e-690b-402a-adc8-7552ba03fa42@uek.pl
+SUMMARY:Lecture | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20250116T164500
 DTEND;TZID=Europe/Warsaw:20250116T191500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof.UEK dr hab.inż. Janusz Morajda
-LOCATION:Paw.S sala 1
+DESCRIPTION:prof.UEK Dr hab.inż. Janusz Morajda
+LOCATION:Building S Room 1
 END:VEVENT
 BEGIN:VEVENT
-UID:6e404645-abec-4476-8204-00f473e2f2c6@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:d53972ba-5ce6-486c-8bd7-549ae2a5fd60@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20250117T103000
 DTEND;TZID=Europe/Warsaw:20250117T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:0a5d5118-a35f-4505-a6a6-2fcc6d60ed64@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:68eda16a-76b0-4511-a3bd-c3c144d977e2@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20250120T084500
 DTEND;TZID=Europe/Warsaw:20250120T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:2da25a59-ccfe-4d61-a63d-62f5195aa89f@uek.pl
-SUMMARY:ćwiczenia | Computer Systems
+UID:b7f689c4-ba92-4ab3-8aff-9dba3591d64f@uek.pl
+SUMMARY:Class | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20250120T131500
 DTEND;TZID=Europe/Warsaw:20250120T140000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.A 014 lab. Win8.1 Office21
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building A 014 Lab Win8.1 Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:ee949e65-6c34-40af-8499-fef10d3c832a@uek.pl
-SUMMARY:ćwiczenia | Mathematical Analysis and Linear Algebra
+UID:21a4886d-e6d3-4406-99ee-d987f3640549@uek.pl
+SUMMARY:Class | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20250120T140000
 DTEND;TZID=Europe/Warsaw:20250120T154500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:dr Joanna Mrówka
-LOCATION:Bud.gł. 5
+DESCRIPTION:Dr Joanna Mrówka
+LOCATION:Main Building 5
 END:VEVENT
 BEGIN:VEVENT
-UID:5b9ed331-add9-4c3b-bd54-d6005d005455@uek.pl
-SUMMARY:wykład | Mathematical Analysis and Linear Algebra
+UID:9d004610-73a1-4752-bf73-a092b5b2b320@uek.pl
+SUMMARY:Lecture | Mathematical Analysis and Linear Algebra
 DTSTART;TZID=Europe/Warsaw:20250121T094500
 DTEND;TZID=Europe/Warsaw:20250121T111500
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Beata Ciałowicz
-LOCATION:Paw.S sala 3
+DESCRIPTION:Prof. UEK Dr hab. Beata Ciałowicz
+LOCATION:Building S Room 3
 END:VEVENT
 BEGIN:VEVENT
-UID:fb42f324-1e70-4d86-ab1d-37174d90085b@uek.pl
-SUMMARY:ćwiczenia | Algorithms and Theory of Computation
+UID:dfa5d54e-f5af-4e31-9c5e-f2c9d18e8d19@uek.pl
+SUMMARY:Class | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20250121T150000
 DTEND;TZID=Europe/Warsaw:20250121T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Katarzyna Wójcik
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:MSc Katarzyna Wójcik
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:7cc046b3-96d7-4761-ba17-6617c8bba358@uek.pl
-SUMMARY:wykład | Computer Systems
+UID:5046be47-421d-46f1-ac56-e6121c490977@uek.pl
+SUMMARY:Lecture | Computer Systems
 DTSTART;TZID=Europe/Warsaw:20250121T164500
 DTEND;TZID=Europe/Warsaw:20250121T173000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Joanna Wyrobek
-LOCATION:Paw.F 008
+DESCRIPTION:Prof. UEK Dr hab. Joanna Wyrobek
+LOCATION:Building F 008
 END:VEVENT
 BEGIN:VEVENT
-UID:4689b6ec-880c-4f1d-b47a-fdda3eca5d8f@uek.pl
-SUMMARY:ćwiczenia | Organisation and Management
+UID:93ec02a7-e038-416b-9a46-855bb1d83b71@uek.pl
+SUMMARY:Class | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20250123T150000
 DTEND;TZID=Europe/Warsaw:20250123T163000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:mgr Kamila Kwiatkowska
-LOCATION:Paw.G - 2
+DESCRIPTION:MSc Kamila Kwiatkowska
+LOCATION:Building G - 2
 END:VEVENT
 BEGIN:VEVENT
-UID:284cdc12-e070-42d7-ba30-45a512272ef0@uek.pl
-SUMMARY:wykład | Organisation and Management
+UID:6a83e040-c3d9-489b-89ff-cf3f11dea2f2@uek.pl
+SUMMARY:Lecture | Organisation and Management
 DTSTART;TZID=Europe/Warsaw:20250123T164500
 DTEND;TZID=Europe/Warsaw:20250123T173000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Czesław Mesjasz
-LOCATION:Paw.S sala 9
+DESCRIPTION:Prof. UEK Dr hab. Czesław Mesjasz
+LOCATION:Building S Room 9
 END:VEVENT
 BEGIN:VEVENT
-UID:8b307e44-ae57-4ef6-b515-ddfde29954b3@uek.pl
-SUMMARY:ćwiczenia | Computer Programming 1
+UID:ebc27a45-bd4c-4dfd-9041-801bfb890042@uek.pl
+SUMMARY:Class | Computer Programming 1
 DTSTART;TZID=Europe/Warsaw:20250124T103000
 DTEND;TZID=Europe/Warsaw:20250124T130000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof. UEK dr hab. Janusz Stal
-LOCATION:Paw.A 013 lab. Win10\, Office21
+DESCRIPTION:Prof. UEK Dr hab. Janusz Stal
+LOCATION:Building A 013 Lab Win10\, Office21
 END:VEVENT
 BEGIN:VEVENT
-UID:8fd90674-2c8b-4f90-bdce-234b39c6cd3d@uek.pl
-SUMMARY:egzamin | Algorithms and Theory of Computation
+UID:95dad94d-79f2-4bcd-b349-704e90bb8755@uek.pl
+SUMMARY:Exam | Algorithms and Theory of Computation
 DTSTART;TZID=Europe/Warsaw:20250130T121500
 DTEND;TZID=Europe/Warsaw:20250130T140000
 DTSTAMP:20161015T001000Z
-DESCRIPTION:prof.UEK dr hab.inż. Janusz Morajda
+DESCRIPTION:prof.UEK Dr hab.inż. Janusz Morajda
 LOCATION:Bibl. 441
 END:VEVENT
 END:VCALENDAR
