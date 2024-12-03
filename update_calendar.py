@@ -77,13 +77,11 @@ for line in lines:
                 evt_line = re.sub(r'DTSTART;TZID=Europe/Warsaw:(\d{8}T\d{6})', r'DTSTART;TZID=Europe/Warsaw:\1', evt_line)
                 evt_line = re.sub(r'DTEND;TZID=Europe/Warsaw:(\d{8}T\d{6})', r'DTEND;TZID=Europe/Warsaw:\1', evt_line)
                 processed_event.append(evt_line)
-            # Add UID to the event
-            event_uid = f'{uuid.uuid4()}@uek.pl'
-            # Insert UID after BEGIN:VEVENT
-            processed_event.insert(1, f'UID:{event_uid}')
-            # Add BEGIN:VEVENT and END:VEVENT
-            processed_event.insert(0, 'BEGIN:VEVENT')
-            processed_event.append('END:VEVENT')
+            # Add UID to the event if not present
+            if 'UID' not in event_props:
+                event_uid = f'{uuid.uuid4()}@uek.pl'
+                # Insert UID after BEGIN:VEVENT
+                processed_event.insert(1, f'UID:{event_uid}')
             # Add the processed event to corrected_events
             corrected_events.extend(processed_event)
     elif in_event:
