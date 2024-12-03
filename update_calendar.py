@@ -1,7 +1,6 @@
 import re
 import uuid
 import requests
-from datetime import datetime
 from config import CALENDAR_URL
 
 # Fetch the calendar data from the URL
@@ -12,38 +11,59 @@ data = response.text
 lines = data.split('\n')
 
 # Initialize variables
-corrected_lines = []
+corrected_events = []
 in_event = False
 event_lines = []
 
 for line in lines:
+    line = line.rstrip('\r\n')
     # Start of an event
     if line.strip() == 'BEGIN:VEVENT':
         in_event = True
         event_lines = [line]
         continue
     # End of an event
-    if line.strip() == 'END:VEVENT':
+    elif line.strip() == 'END:VEVENT':
         event_lines.append(line)
         in_event = False
-        # Check if event should be excluded
-        event_str = '\n'.join(event_lines)
+        # Process the event
+        # Unfold lines (concatenate continuation lines)
+        unfolded_event = []
+        previous_line = ''
+        for evt_line in event_lines:
+            if evt_line.startswith(' '):
+                previous_line += evt_line[1:]
+            else:
+                if previous_line:
+                    unfolded_event.append(previous_line)
+                previous_line = evt_line
+        if previous_line:
+            unfolded_event.append(previous_line)
+        # Parse event properties
+        event_props = {}
+        for evt_line in unfolded_event:
+            if ':' in evt_line:
+                key, value = evt_line.split(':', 1)
+                event_props[key] = value
+        # Check for placeholder text
+        summary = event_props.get('SUMMARY', '')
+        location = event_props.get('LOCATION', '')
         exclude_event = False
-        if 'LOCATION:Wybierz swoją grupę językową' in event_str:
+        if 'Wybierz swoją grupę językową' in location:
             exclude_event = True
-        if 'SUMMARY:lektorat | English' in event_str and 'LOCATION:Wybierz swoją grupę językową' in event_str:
+        elif 'lektorat |' in summary and 'Wybierz swoją grupę językową' in location:
             exclude_event = True
-        if 'SUMMARY:rezerwacja |' in event_str:
+        elif 'rezerwacja |' in summary:
             exclude_event = True
-        if 'SUMMARY:Przeniesienie zajęć |' in event_str:
+        elif 'Przeniesienie zajęć |' in summary:
             exclude_event = True
         if exclude_event:
-            # Skip adding this event to corrected_lines
+            # Skip this event
             continue
         else:
-            # Process and add the event
+            # Correct event properties
             processed_event = []
-            for evt_line in event_lines:
+            for evt_line in unfolded_event:
                 # Remove ;VALUE=DATE-TIME from DTSTART and DTEND
                 evt_line = re.sub(r'(DTSTART|DTEND);[^:]*:', r'\1:', evt_line)
                 # Correct DTSTAMP format
@@ -54,32 +74,51 @@ for line in lines:
                         evt_line = evt_line.replace('DTSTART:', 'DTSTART;TZID=Europe/Warsaw:')
                         evt_line = evt_line.replace('DTEND:', 'DTEND;TZID=Europe/Warsaw:')
                 # Correct date formats if necessary
-                evt_line = re.sub(r'DTSTART;TZID=Europe/Warsaw:(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})', r'DTSTART;TZID=Europe/Warsaw:\1\2\3T\4\5\6', evt_line)
-                evt_line = re.sub(r'DTEND;TZID=Europe/Warsaw:(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})', r'DTEND;TZID=Europe/Warsaw:\1\2\3T\4\5\6', evt_line)
+                evt_line = re.sub(r'DTSTART;TZID=Europe/Warsaw:(\d{8}T\d{6})', r'DTSTART;TZID=Europe/Warsaw:\1', evt_line)
+                evt_line = re.sub(r'DTEND;TZID=Europe/Warsaw:(\d{8}T\d{6})', r'DTEND;TZID=Europe/Warsaw:\1', evt_line)
                 processed_event.append(evt_line)
             # Add UID to the event
             event_uid = f'{uuid.uuid4()}@uek.pl'
+            # Insert UID after BEGIN:VEVENT
             processed_event.insert(1, f'UID:{event_uid}')
-            # Add the processed event to corrected_lines
-            corrected_lines.extend(processed_event)
-        continue
-    if in_event:
+            # Add BEGIN:VEVENT and END:VEVENT
+            processed_event.insert(0, 'BEGIN:VEVENT')
+            processed_event.append('END:VEVENT')
+            # Add the processed event to corrected_events
+            corrected_events.extend(processed_event)
+    elif in_event:
         event_lines.append(line)
     else:
-        corrected_lines.append(line)
+        # Collect non-event lines (headers and footers)
+        continue
 
-# Ensure correct VCALENDAR headers
-if 'BEGIN:VCALENDAR' not in corrected_lines[0]:
-    corrected_lines.insert(0, 'BEGIN:VCALENDAR')
-if 'VERSION:2.0' not in corrected_lines:
-    corrected_lines.insert(1, 'VERSION:2.0')
-if 'PRODID:-//Uek Plan zajęć//' not in corrected_lines:
-    corrected_lines.insert(2, 'PRODID:-//Uek Plan zajęć//')
-if 'END:VCALENDAR' not in corrected_lines[-1]:
-    corrected_lines.append('END:VCALENDAR')
+# Prepare the final corrected lines
+headers = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Uek Plan zajęć//',
+]
+footers = ['END:VCALENDAR']
 
-# Join corrected lines
-corrected_data = '\n'.join(corrected_lines)
+# Function to fold lines longer than 75 octets
+def fold_line(line):
+    if len(line.encode('utf-8')) <= 75:
+        return line
+    else:
+        folded = ''
+        while len(line.encode('utf-8')) > 75:
+            part = line[:75]
+            # Ensure we are not splitting multi-byte characters
+            while len(part.encode('utf-8')) > 75:
+                part = part[:-1]
+            folded += part + '\r\n '
+            line = line[len(part):]
+        folded += line
+        return folded
+
+# Apply line folding to all lines
+all_lines = headers + corrected_events + footers
+corrected_data = '\r\n'.join(fold_line(line) for line in all_lines)
 
 # Save to a new .ics file
 with open('corrected_calendar.ics', 'w', encoding='utf-8') as f:
