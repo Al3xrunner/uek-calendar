@@ -37,7 +37,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git add corrected_calendar.ics
+          git add corrected_calendar.ics uid_mappings.json
           timestamp=$(date -u)
           git commit -m "Update calendar ($timestamp)" || echo "No changes to commit"
 
