@@ -1,5 +1,6 @@
 import re
 import uuid
+import hashlib
 import requests
 from config import CALENDAR_URL, LANGUAGE
 
@@ -134,9 +135,21 @@ for line in lines:
                 processed_event.append(evt_line)
             # Add UID to the event if not present
             if 'UID' not in event_props:
-                event_uid = f'{uuid.uuid4()}@uek.pl'
+                # Generate a deterministic UID based on event properties
+                uid_input = (event_props.get('SUMMARY', '') +
+                             event_props.get('DTSTART', '') +
+                             event_props.get('DTEND', ''))
+                uid_hash = hashlib.md5(uid_input.encode('utf-8')).hexdigest()
+                event_uid = f'{uid_hash}@uek.pl'
                 # Insert UID after BEGIN:VEVENT
                 processed_event.insert(1, f'UID:{event_uid}')
+            else:
+                # Ensure the existing UID is preserved
+                existing_uid = event_props['UID']
+                # Remove existing UID from processed_event if present
+                processed_event = [line for line in processed_event if not line.startswith('UID:')]
+                # Insert UID after BEGIN:VEVENT
+                processed_event.insert(1, f'UID:{existing_uid}')
             # Add the processed event to corrected_events
             corrected_events.extend(processed_event)
     elif in_event:
