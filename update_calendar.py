@@ -18,7 +18,7 @@ corrected_events = []
 in_event = False
 event_lines = []
 
-# Translation mappings
+# Translation mappings (same as before)
 translations = {
     'PL': {
         'wykład': 'wykład',
@@ -51,13 +51,20 @@ translations = {
 # Choose the appropriate translation mapping
 translation_map = translations.get(LANGUAGE, translations['PL'])
 
-# Load UID mappings from file
+# Load UID mappings from file or create an empty one if not present
 uid_mappings_file = 'uid_mappings.json'
+uid_mappings = {}
+
 if os.path.exists(uid_mappings_file):
     with open(uid_mappings_file, 'r', encoding='utf-8') as f:
-        uid_mappings = json.load(f)
+        try:
+            uid_mappings = json.load(f)
+        except json.JSONDecodeError:
+            uid_mappings = {}
 else:
-    uid_mappings = {}
+    # Create an empty JSON file if it doesn't exist
+    with open(uid_mappings_file, 'w', encoding='utf-8') as f:
+        json.dump(uid_mappings, f)
 
 for line in lines:
     line = line.rstrip('\r\n')
@@ -111,15 +118,20 @@ for line in lines:
             original_dtstart = event_props.get('DTSTART', '')
             original_dtend = event_props.get('DTEND', '')
 
-            # Generate event key (date and original name in Polish)
-            # Extract date from DTSTART (format: YYYYMMDD)
-            date_match = re.search(r'(\d{8})T\d{6}', original_dtstart)
-            if date_match:
-                event_date = date_match.group(1)
+            # Generate event key (date, time, and original name in Polish)
+            # Extract date and time from DTSTART
+            dtstart_match = re.search(r'(\d{8})T(\d{6})', original_dtstart)
+            if dtstart_match:
+                event_date = dtstart_match.group(1)
+                event_time = dtstart_match.group(2)
             else:
                 event_date = 'unknown_date'
+                event_time = 'unknown_time'
 
-            event_key = f"{event_date}_{original_summary}"
+            # Normalize the summary by stripping whitespace and converting to lowercase
+            event_name = original_summary.strip().lower()
+
+            event_key = f"{event_date}_{event_time}_{event_name}"
 
             # Check if UID exists in mappings
             if event_key in uid_mappings:
@@ -186,7 +198,7 @@ headers = [
     'PRODID:-//Uek Plan zajęć//',
 ]
 
-# Include the VTIMEZONE component
+# Include the VTIMEZONE component (same as before)
 vtimezone_component = [
     'BEGIN:VTIMEZONE',
     'TZID:Europe/Warsaw',
@@ -210,7 +222,7 @@ vtimezone_component = [
 
 footers = ['END:VCALENDAR']
 
-# Function to fold lines longer than 75 octets
+# Function to fold lines longer than 75 octets (same as before)
 def fold_line(line):
     if len(line.encode('utf-8')) <= 75:
         return line
@@ -234,6 +246,6 @@ corrected_data = '\r\n'.join(fold_line(line) for line in all_lines)
 with open('corrected_calendar.ics', 'w', encoding='utf-8') as f:
     f.write(corrected_data)
 
-# Save updated UID mappings to file
+# Save updated UID mappings to file (overwrite existing file)
 with open(uid_mappings_file, 'w', encoding='utf-8') as f:
     json.dump(uid_mappings, f, ensure_ascii=False, indent=2)
