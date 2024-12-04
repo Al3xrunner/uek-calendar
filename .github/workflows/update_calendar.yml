@@ -2,8 +2,8 @@ name: Update Calendar
 
 on:
   schedule:
-    # Runs every 5 minutes
-    - cron: '*/6 * * * *'
+    # Runs at 00:00 and 12:00 UTC every day
+    - cron: '0 0,12 * * *'
   workflow_dispatch:
 
 jobs:
