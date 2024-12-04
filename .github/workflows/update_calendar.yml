@@ -3,7 +3,7 @@ name: Update Calendar
 on:
   schedule:
     # Runs every 5 minutes
-    - cron: '*/5 * * * *'
+    - cron: '*/6 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -43,6 +43,6 @@ jobs:
 
       - name: Push changes
         run: |
-          git push origin HEAD:${{ github.ref }}
+          git push origin HEAD:${{ github.ref }} --force-with-lease
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
