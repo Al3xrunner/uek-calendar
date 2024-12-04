@@ -2,6 +2,8 @@ import re
 import uuid
 import hashlib
 import requests
+import json
+import os
 from config import CALENDAR_URL, LANGUAGE
 
 # Fetch the calendar data from the URL
@@ -48,6 +50,14 @@ translations = {
 
 # Choose the appropriate translation mapping
 translation_map = translations.get(LANGUAGE, translations['PL'])
+
+# Load UID mappings from file
+uid_mappings_file = 'uid_mappings.json'
+if os.path.exists(uid_mappings_file):
+    with open(uid_mappings_file, 'r', encoding='utf-8') as f:
+        uid_mappings = json.load(f)
+else:
+    uid_mappings = {}
 
 for line in lines:
     line = line.rstrip('\r\n')
@@ -97,6 +107,28 @@ for line in lines:
         else:
             # Correct event properties
             processed_event = []
+            original_summary = event_props.get('SUMMARY', '')  # Store original SUMMARY in Polish
+            original_dtstart = event_props.get('DTSTART', '')
+            original_dtend = event_props.get('DTEND', '')
+
+            # Generate event key (date and original name in Polish)
+            # Extract date from DTSTART (format: YYYYMMDD)
+            date_match = re.search(r'(\d{8})T\d{6}', original_dtstart)
+            if date_match:
+                event_date = date_match.group(1)
+            else:
+                event_date = 'unknown_date'
+
+            event_key = f"{event_date}_{original_summary}"
+
+            # Check if UID exists in mappings
+            if event_key in uid_mappings:
+                event_uid = uid_mappings[event_key]
+            else:
+                # Generate new UID and store it
+                event_uid = f'{uuid.uuid4()}@uek.pl'
+                uid_mappings[event_key] = event_uid
+
             for evt_line in unfolded_event:
                 # Remove ;VALUE=DATE-TIME from DTSTART and DTEND
                 evt_line = re.sub(r'(DTSTART|DTEND);[^:]*:', r'\1:', evt_line)
@@ -133,23 +165,12 @@ for line in lines:
                         evt_line = 'DESCRIPTION:' + description_value
 
                 processed_event.append(evt_line)
-            # Add UID to the event if not present
-            if 'UID' not in event_props:
-                # Generate a deterministic UID based on event properties
-                uid_input = (event_props.get('SUMMARY', '') +
-                             event_props.get('DTSTART', '') +
-                             event_props.get('DTEND', ''))
-                uid_hash = hashlib.md5(uid_input.encode('utf-8')).hexdigest()
-                event_uid = f'{uid_hash}@uek.pl'
-                # Insert UID after BEGIN:VEVENT
-                processed_event.insert(1, f'UID:{event_uid}')
-            else:
-                # Ensure the existing UID is preserved
-                existing_uid = event_props['UID']
-                # Remove existing UID from processed_event if present
-                processed_event = [line for line in processed_event if not line.startswith('UID:')]
-                # Insert UID after BEGIN:VEVENT
-                processed_event.insert(1, f'UID:{existing_uid}')
+
+            # Remove existing UID from processed_event if present
+            processed_event = [line for line in processed_event if not line.startswith('UID:')]
+            # Insert UID after BEGIN:VEVENT
+            processed_event.insert(1, f'UID:{event_uid}')
+
             # Add the processed event to corrected_events
             corrected_events.extend(processed_event)
     elif in_event:
@@ -212,3 +233,7 @@ corrected_data = '\r\n'.join(fold_line(line) for line in all_lines)
 # Save to a new .ics file
 with open('corrected_calendar.ics', 'w', encoding='utf-8') as f:
     f.write(corrected_data)
+
+# Save updated UID mappings to file
+with open(uid_mappings_file, 'w', encoding='utf-8') as f:
+    json.dump(uid_mappings, f, ensure_ascii=False, indent=2)
