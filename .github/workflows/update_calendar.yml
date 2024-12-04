@@ -37,9 +37,10 @@ jobs:
 
       - name: Commit changes
         run: |
-          git add corrected_calendar.ics uid_mappings.json
-          timestamp=$(date -u)
-          git commit -m "Update calendar ($timestamp)" || echo "No changes to commit"
+          # Add all .ics and uid_mappings_*.json files
+          git add *.ics uid_mappings_*.json
+          timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          git commit -m "Update calendars ($timestamp)" || echo "No changes to commit"
 
       - name: Push changes
         run: |
