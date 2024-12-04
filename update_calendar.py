@@ -1,6 +1,5 @@
 import re
 import uuid
-import hashlib
 import requests
 import json
 import os
@@ -95,6 +94,7 @@ for line in lines:
         for evt_line in unfolded_event:
             if ':' in evt_line:
                 key, value = evt_line.split(':', 1)
+                key = key.split(';')[0]  # Strip any parameters from the key
                 event_props[key] = value
         # Check for placeholder text
         summary = event_props.get('SUMMARY', '')
@@ -115,23 +115,23 @@ for line in lines:
             # Correct event properties
             processed_event = []
             original_summary = event_props.get('SUMMARY', '')  # Store original SUMMARY in Polish
-            original_dtstart = event_props.get('DTSTART', '')
-            original_dtend = event_props.get('DTEND', '')
 
-            # Generate event key (date, time, and original name in Polish)
-            # Extract date and time from DTSTART
-            dtstart_match = re.search(r'(\d{8})T(\d{6})', original_dtstart)
-            if dtstart_match:
-                event_date = dtstart_match.group(1)
-                event_time = dtstart_match.group(2)
+            # Get the original DTSTART line
+            dtstart_line = next((line for line in unfolded_event if line.startswith('DTSTART')), '')
+            if dtstart_line:
+                dtstart_match = re.search(r'DTSTART(?:;[^:]*)?:(\d{8})T\d{6}', dtstart_line)
+                if dtstart_match:
+                    event_date = dtstart_match.group(1)  # YYYYMMDD
+                else:
+                    event_date = 'unknown_date'
             else:
                 event_date = 'unknown_date'
-                event_time = 'unknown_time'
 
             # Normalize the summary by stripping whitespace and converting to lowercase
             event_name = original_summary.strip().lower()
 
-            event_key = f"{event_date}_{event_time}_{event_name}"
+            # Use only date and event name as key
+            event_key = f"{event_date}_{event_name}"
 
             # Check if UID exists in mappings
             if event_key in uid_mappings:
