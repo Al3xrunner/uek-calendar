@@ -107,7 +107,8 @@ DTSTART;TZID=Europe/Warsaw:20250515T113000
 DTEND;TZID=Europe/Warsaw:20250515T130000
 DTSTAMP:20161015T001000Z
 DESCRIPTION:MSc Agnieszka Kądziołka-Zaręba
-LOCATION:Building F CJ 216
+LOCATION:<a href="https://services.uek.krakow.pl/schedule/class/5978870"> l
+ ink do zajęć</a>
 END:VEVENT
 BEGIN:VEVENT
 UID:cc981dc9-392e-409f-a622-5749afe5c1a0@uek.pl

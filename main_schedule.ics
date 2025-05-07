@@ -827,7 +827,8 @@ DTSTART;TZID=Europe/Warsaw:20250515T080000
 DTEND;TZID=Europe/Warsaw:20250515T093000
 DTSTAMP:20161015T001000Z
 DESCRIPTION:Dr inż. Tadeusz Wilusz
-LOCATION:Building A 07 lab. Win7\, Office21
+LOCATION:<a href="https://services.uek.krakow.pl/schedule/class/6114856"> l
+ ink do zajęć</a>
 END:VEVENT
 BEGIN:VEVENT
 UID:a82ff466-825f-4885-965f-65ad0b1aabc6@uek.pl
@@ -836,7 +837,8 @@ DTSTART;TZID=Europe/Warsaw:20250515T131500
 DTEND;TZID=Europe/Warsaw:20250515T144500
 DTSTAMP:20161015T001000Z
 DESCRIPTION:Dr Igor Sikora
-LOCATION:Building F 413
+LOCATION:<a href="https://services.uek.krakow.pl/schedule/class/6051186"> l
+ ink do zajęć</a>
 END:VEVENT
 BEGIN:VEVENT
 UID:6c4ae875-e76b-4a8c-8210-a1307cad64b6@uek.pl
